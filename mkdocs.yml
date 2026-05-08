@@ -1,0 +1,54 @@
+site_name: Groupies Commons
+site_description: The public archive of live music in the Netherlands
+site_url: https://docs.wearegroupies.com
+repo_url: https://github.com/wearegroupies/commons
+repo_name: wearegroupies/commons
+edit_uri: ""
+
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: custom
+    accent: custom
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+  logo: assets/groupies-icon.svg
+  favicon: assets/groupies-icon.svg
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - Charter: charter.md
+  - Schema:
+    - Overview: schema/index.md
+    - Events: schema/events.md
+    - Artists: schema/artists.md
+    - Venues: schema/venues.md
+  - Exports:
+    - Overview: exports/index.md
+    - Formats: exports/formats.md
+  - Archive: archive/index.md
+  - Contributing: contributing.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - toc:
+      permalink: true
